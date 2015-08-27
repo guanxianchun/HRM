@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="hrm-webapp">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="hrm-service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hrm-service/hrm-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hrm-persistent-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hrm-persistent/hrm-persistent">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hrm-common-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hrm-common/hrm-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hrm-workflow-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hrm-workflow/hrm-workflow">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/hrm-webapp/target/classes"/>
+        <property name="context-root" value="hrm-webapp"/>
+    </wb-module>
+</project-modules>
